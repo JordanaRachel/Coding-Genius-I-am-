@@ -1,6 +1,5 @@
 # Coding-Genius-I-am-
-#Code Quiz
-#### Random-Shelf-Repo, 10/01/21
+#### Coding-Genius-I-am Repo, 10/01/21
 #### By Jordana Bravo
 ## Description
 
@@ -21,15 +20,14 @@
 ## Known Bugs
 It turns out that although heroku stores the image files temporarily in there db it is not something that they store long term so I am switching back to links.
 ## Support and contact details
-Please email us for further questions at lmkirkiii@gmail.com
+Please email us for further questions at jordanabravo2009@yahoo.com
 ## Technologies Used
 HTML
 CSS
-Python
-Django
+
 ## Contribution Guidlines
 Direct link to site:
-https://shelf-hope.herokuapp.com/
+
 ### License
-Copyright(c) 2015 By Lawrence Kirk
+Copyright(c) 2021 By Jordana Bravo
 This software is licensed under MIT license.
