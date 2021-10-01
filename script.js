@@ -2,6 +2,8 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const nextButton = document.getElementById('next');
+var timeleft = 60;
+
 
 const myQuestions = [
     {
@@ -47,7 +49,13 @@ const myQuestions = [
 ];
 
 function buildQuiz(){
-  
+  var downloadTimer = setInterval(function(){
+    if(timeleft <= 0){
+      clearInterval(downloadTimer);
+    }
+    document.getElementById("progressBar").innerHTML = 10 - timeleft;
+    timeleft -= 1;
+  }, 1000);
   nextButton.style.visibility = "visible"
   
     console.log("this function works");
@@ -84,7 +92,7 @@ function buildQuiz(){
   
     // finally combine our output list into one string of HTML and put it on the page
     quizContainer.innerHTML = output.join('');
-    startButton.style.visibility = "hidden"
+    
   }
 
 // on submit, show results
